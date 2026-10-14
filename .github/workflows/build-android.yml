@@ -28,7 +28,7 @@ jobs:
           cache-provider: basic
 
       - name: Preparar herramientas Android
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
 
       - name: Descargar Android SDK requerido
         run: sdkmanager --install "platforms;android-37" "build-tools;36.0.0" "platform-tools"
