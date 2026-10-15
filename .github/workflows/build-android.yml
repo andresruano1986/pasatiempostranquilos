@@ -31,8 +31,7 @@ jobs:
         uses: android-actions/setup-android@v4
 
       - name: Descargar Android SDK requerido
-        run: sdkmanager --channel=3 --install "platforms;android-37" "build-tools;36.0.0" "platform-tools"
-      - name: Compilar APK de prueba
+        run: sdkmanager --channel=3 --install "platforms;android-37.0" "build-tools;37.0.0" "platform-tools"      - name: Compilar APK de prueba
         run: gradle --no-daemon --stacktrace assembleDebug
 
       - name: Guardar APK para descargar
